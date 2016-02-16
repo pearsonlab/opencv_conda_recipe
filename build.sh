@@ -14,9 +14,10 @@ cmake                                                               \
     -DPYTHON_LIBRARY=$PREFIX/lib/$PY_LIB                            \
     -DPYTHON_PACKAGES_PATH=$PREFIX/lib/python2.7/site-packages/     \
     -DCMAKE_INSTALL_PREFIX=$PREFIX                                  \
+    -DCMAKE_OSX_DEPLOYMENT_TARGET=''                                \
     -DWITH_CUDA=OFF                                                 \
     -DWITH_AVFOUNDATION=OFF                                         \
-    -DWITH_FFMPEG=OFF                                               \
+    -DWITH_FFMPEG=ON                                                \
     -DJPEG_INCLUDE_DIR:PATH=$PREFIX/include                         \
     -DJPEG_LIBRARY:FILEPATH=$PREFIX/lib/libjpeg.so                  \
     -DPNG_PNG_INCLUDE_DIR:PATH=$PREFIX/include                      \
